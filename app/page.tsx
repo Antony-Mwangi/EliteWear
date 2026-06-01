@@ -136,7 +136,6 @@ export default function HomePage() {
                   key={product.id}
                   className="group relative flex flex-col overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition-all hover:shadow-md"
                 >
-                  {/* Aspect-ratio box simulating image container */}
                   <div className="aspect-[4/3] w-full bg-zinc-100 transition-colors group-hover:bg-zinc-200/70" />
 
                   <div className="flex flex-1 flex-col p-5">
@@ -145,7 +144,7 @@ export default function HomePage() {
                         {product.title}
                       </h3>
                       <span className="text-sm font-semibold text-zinc-900">
-                        KSh {product.price}
+                        $ {product.price}
                       </span>
                     </div>
 
@@ -168,21 +167,23 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Contextual Action Call */}
-        <section className="bg-zinc-950 py-20 text-center text-white">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 flex flex-col items-center">
-            <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
-              Elevate your retail experience.
-            </h2>
-            <p className="mt-4 max-w-lg text-sm text-zinc-400 leading-relaxed">
-              Join thousands of collectors subscribing to transparent checkout pipelines and priority asset fulfillment channels.
-            </p>
-            <Link
-              href="/register"
-              className="mt-8 inline-flex h-11 items-center justify-center rounded-md bg-white px-6 font-medium text-zinc-950 shadow hover:bg-zinc-50 transition-colors"
-            >
-              Get Started
-            </Link>
+        {/* Call to Action Card Container */}
+        <section className="bg-white py-20">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <div className="rounded-2xl bg-zinc-950 px-6 py-12 text-center text-white sm:px-12 sm:py-16">
+              <h2 className="text-2xl font-medium tracking-tight sm:text-3xl">
+                Upgrade your daily essentials.
+              </h2>
+              <p className="mx-auto mt-3 max-w-md text-sm text-zinc-400 leading-relaxed">
+                Join our community for streamlined checkout, early access to new drops, and reliable delivery.
+              </p>
+              <Link
+                href="/register"
+                className="mt-6 inline-flex h-10 items-center justify-center rounded-md bg-white px-5 text-sm font-medium text-zinc-950 shadow hover:bg-zinc-100 transition-colors"
+              >
+                Sign Up Free
+              </Link>
+            </div>
           </div>
         </section>
       </main>
