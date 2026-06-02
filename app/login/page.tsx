@@ -40,7 +40,7 @@ export default function LoginPage() {
       localStorage.setItem("token", data.token);
       localStorage.setItem("user", JSON.stringify(data.user));
 
-      router.push("/cart");
+      router.push("/");
       router.refresh();
     } catch (err) {
       setError(
