@@ -1,10 +1,10 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+// import Header from "@/components/Header";
+// import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-zinc-50/60 flex flex-col antialiased selection:bg-zinc-900 selection:text-white">
-      <Header />
+      
 
       <main className="flex-1">
         <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
@@ -110,7 +110,7 @@ export default function ContactPage() {
         </section>
       </main>
 
-      <Footer />
+
     </div>
   );
 }

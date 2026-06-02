@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
 
 interface FeatureCard {
   icon: React.ReactNode;
@@ -41,7 +40,7 @@ const FEATURES: FeatureCard[] = [
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white">
-      <Header />
+     
 
       <main>
         {/* Hero Section */}
@@ -120,7 +119,7 @@ export default function HomePage() {
         </section>
       </main>
 
-      <Footer />
+
     </div>
   );
 }

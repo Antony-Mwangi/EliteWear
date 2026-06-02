@@ -1,10 +1,8 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-zinc-50/60 flex flex-col antialiased selection:bg-zinc-900 selection:text-white">
-      <Header />
+
 
       <main className="flex-1">
         {/* Hero Context Block */}
@@ -95,7 +93,7 @@ export default function AboutPage() {
         </section>
       </main>
 
-      <Footer />
+
     </div>
   );
 }
